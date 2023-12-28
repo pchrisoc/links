@@ -4,7 +4,7 @@
 	import { sleep } from '$lib/util';
 	import { onMount } from 'svelte';
 	import Temporary from '$lib/components/Temporary.svelte';
-	import { getLinkFromShort } from '../../lib/firebase/firebase';
+	import { getLinkFromShort } from '../../lib/api/api';
 
 	// get data from URL
 	export let data;

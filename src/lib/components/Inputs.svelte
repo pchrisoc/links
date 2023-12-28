@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { Status } from '$lib/types';
 	import { getDomain, pathToUrl } from '$lib/util';
-	import { addLink } from '$lib/firebase/firebase';
-	import type { LinkDoc } from '$lib/firebase/types';
+	import { addLink } from '$lib/api/api';
+	import type { LinkDoc } from '$lib/api/types';
 	import type { Mode } from '$lib/types';
 	import Message from './Message.svelte';
 	import Recents from './Recents.svelte';

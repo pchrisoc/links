@@ -15,11 +15,11 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Hyper home page" />
+	<meta name="description" content="Links Home page" />
 </svelte:head>
 
 <section>
-	<h1>HyperDTI</h1>
+	<h1>Links</h1>
 	<Modes {mode} {makeSimple} {makeAdvanced} />
 	<Inputs {mode} />
 </section>
