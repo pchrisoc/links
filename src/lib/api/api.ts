@@ -1,7 +1,7 @@
 import { hash, validateUrl } from '$lib/util';
 import { type LinkDoc, type LinkDocSend } from './types';
 
-const backendUrl = 'http://localhost:3333';
+const backendUrl = 'https://links-techops-white-mountain-4284.fly.dev';
 
 /**
  * Checks if the link is already in the links collection.

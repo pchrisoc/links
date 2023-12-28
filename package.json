@@ -3,16 +3,17 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
+		"build": "rm -rf ./server/build && vite build && mv ./build ./server/build && cd ./server && npm i",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"deploy": "npm i && vite build && mv ./build ./server/build && cd ./server && npm i && npm start"
+		"deploy": "rm -rf ./server/build && npm i && vite build && mv ./build ./server/build && cd ./server && npm i && npm start"
 	},
 	"devDependencies": {
+		"@flydotio/dockerfile": "^0.5.0",
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@sveltejs/adapter-auto": "^2.0.0",

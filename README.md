@@ -23,6 +23,15 @@ Navigate to `./server` and create a `.env` file with the MongoDB connection stri
 
 ### Deployment
 Navigate to project root and run `npm run deploy`. This will build the frontend, copy the build folder to server, and deploy it via the Express server at `:3333/`.
+
+Currently deployed via Fly.io. Steps to deploy to Fly.io:
+1. Install the Fly.io CLI
+1b. Set up the environment variable: `fly secrets set MONGO_URI=<your mongo uri>`
+2. Run `flyctl launch` and follow the prompts
+3. Run `flyctl deploy` to deploy the app
 ## License
 
 [MIT](LICENSE)
+
+TODO:
+- [ ] Fix search for existing links path URL escaping
