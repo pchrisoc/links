@@ -135,7 +135,7 @@
 
 	button:hover {
 		border: 1.5px solid var(--var-color-white);
-		background-color: var(--var-color-red);
+		background-color: var(--var-color-blue);
 		color: var(--var-color-white);
 	}
 </style>

@@ -4,14 +4,14 @@
 </svelte:head>
 
 <div class="about-column">
-	<h1>About HyperDTI</h1>
+	<h1>About Links</h1>
 
 	<p>
-	WIP
+	IEEE Links is a link shortener for IEEE at UC Berkeley. It is a redirect hub for all things IEEE at Berkeley.
 	</p>
 
 	<p>
-		Created by Ryan Ma, credits to Daniel Wei for the original design
+		Created by Ryan Ma, credits to Daniel Wei for the original design at <a href="https://hyperdt.in/">hyperdt.in</a>.
 	</p>
 </div>
 

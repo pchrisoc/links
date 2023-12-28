@@ -42,7 +42,7 @@
 		padding: 0.5rem 1rem;
 		border-radius: 0;
 		border-bottom: 2px solid var(--var-color-grey);
-		background-color: var(--var-color-blue);
+		background-color: var(--var-color-grey);
 		color: var(--var-color-white);
 		cursor: pointer;
 		transition: var(--var-std-transition);
@@ -50,6 +50,6 @@
 
 	div.activetab,
 	div.tab:hover {
-		border-bottom: 2px solid var(--var-color-red);
+		border-bottom: 2px solid var(--var-color-blue);
 	}
 </style>

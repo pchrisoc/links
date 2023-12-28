@@ -1,9 +1,11 @@
 import express from 'express';
 import connectDB from './config/db.js';
 import dotenv from 'dotenv';
+import cors from 'cors';
 dotenv.config({ path: './config/.env' });
 
 const app = express();
+app.use(cors());
 
 connectDB();
 
@@ -14,7 +16,7 @@ import urlsRouter from './routes/urls.js';
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use('/', indexRouter);
+app.use('/link', indexRouter);
 app.use('/api', urlsRouter);
 
 // Server Setup

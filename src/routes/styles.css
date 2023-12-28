@@ -2,8 +2,8 @@
 @import '@fontsource/poppins';
 
 :root {
-	--var-color-grey: #4a4a4a;
-	--var-color-red: #ff324a;
+	--var-color-grey: #1f2228;
+	--var-color-blue: #00a6d5;	
 	--var-color-white: #ffffff;
 	--var-border-radius: 15px;
 	--var-std-transition: all 0.2s ease-in-out;
@@ -23,6 +23,6 @@ a {
 
 a:hover {
 	text-decoration: underline;
-	text-decoration-color: var(--var-color-red);
+	text-decoration-color: var(--var-color-blue);
 	text-decoration-thickness: 1.5px;
 }

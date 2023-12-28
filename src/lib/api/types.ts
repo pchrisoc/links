@@ -9,5 +9,9 @@ type LinkDoc = {
 	timestamp?: number;
 };
 
+type LinkDocSend = {
+	origUrl: string;
+	shortUrl: string;
+}
 
-export { type LinkDoc };
+export { type LinkDoc, type LinkDocSend };

@@ -10,6 +10,14 @@
 - Create custom aliases for your URLs, if you want.
 - URL Validation upon form submission.
 
+## Installation
+Use yarn to install dependencies and run the development server.
+
+```bash
+yarn
+yarn dev
+```
+
 ## License
 
 [MIT](LICENSE)

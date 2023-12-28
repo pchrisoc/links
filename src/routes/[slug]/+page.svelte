@@ -42,7 +42,7 @@
 		align-items: center;
 		justify-content: center;
 		gap: 2rem;
-		background-color: #373738;
+		background-color: var(--var-color-grey);
 
 		position: absolute;
 		top: 0;
