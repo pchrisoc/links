@@ -1,11 +1,11 @@
 <script>
-	import Analytics from '$lib/components/Analytics.svelte';
+	<!-- import Analytics from '$lib/components/Analytics.svelte'; -->
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import './styles.css';
 </script>
 
-<Analytics />
+<!-- <Analytics /> -->
 
 <div class="app">
 	<Header />

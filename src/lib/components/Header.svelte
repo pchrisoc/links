@@ -1,13 +1,13 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/assets/dtilogo-white-small.png';
+	import logo from '$lib/assets/ieee-logo.png';
 	import github from '$lib/assets/github.png';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://www.cornelldti.org/">
-			<img src={logo} alt="DTI" />
+		<a href="https://ieee.studentorg.berkeley.edu/">
+			<img src={logo} alt="UCB IEEE" />
 		</a>
 	</div>
 
@@ -26,7 +26,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/epicdragon44/hyperdti-cu">
+		<a href="https://github.com/goblinrum/links">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>

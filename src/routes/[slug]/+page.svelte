@@ -1,6 +1,6 @@
 <script lang="ts">
 	// imports
-	import loadingPic from '$lib/assets/dtilogo-circle.png';
+	import loadingPic from '$lib/assets/ieee-logo.png';
 	import { sleep } from '$lib/util';
 	import { onMount } from 'svelte';
 	import Temporary from '$lib/components/Temporary.svelte';
