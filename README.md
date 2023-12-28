@@ -18,6 +18,11 @@ yarn
 yarn dev
 ```
 
+### Environment Variables
+Navigate to `./server` and create a `.env` file with the MongoDB connection string following `.env.example`.
+
+### Deployment
+Navigate to project root and run `npm run deploy`. This will build the frontend, copy the build folder to server, and deploy it via the Express server at `:3333/`.
 ## License
 
 [MIT](LICENSE)

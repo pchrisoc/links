@@ -9,7 +9,7 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
  * @param url - The URL to get the domain from
  */
 const getDomain = (url: string): string => {
-	if (url.includes('localhost')) return 'localhost:5173';
+	if (url.includes('localhost')) return 'localhost:3333';
 	const domain = url
 		.substring(url.indexOf('://') + 3)
 		.replace('www.', '')
