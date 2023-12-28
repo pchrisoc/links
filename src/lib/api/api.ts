@@ -2,13 +2,14 @@ import { hash, validateUrl } from '$lib/util';
 import { type LinkDoc, type LinkDocSend } from './types';
 
 const backendUrl = 'https://links-techops-white-mountain-4284.fly.dev';
+// const backendUrl = 'http://localhost:3333';
 
 /**
  * Checks if the link is already in the links collection.
  * @param link The link to check.
  */
 const linkExists = async (link: string): Promise<boolean> => {
-    const res = await fetch(`${backendUrl}/api/${link}`);
+    const res = await fetch(`${backendUrl}/api/${encodeURIComponent(link)}`);
     return res.ok;
 }
 
@@ -18,7 +19,7 @@ const linkExists = async (link: string): Promise<boolean> => {
  */
 
 const shortExists = async (short: string): Promise<boolean> => {
-    const res = await fetch(`${backendUrl}/link/${short}`);
+    const res = await fetch(`${backendUrl}/link/${encodeURIComponent(short)}`);
     return res.ok;
 }
 
@@ -76,7 +77,7 @@ const addLink = async (link: string, customShort?: string): Promise<string> => {
  * @param link The link to get the short ID for.
  */
 const getShortFromLink = async (link: string): Promise<string> => {
-    const res = await fetch(`${backendUrl}/api/${link}`);
+    const res = await fetch(`${backendUrl}/api/${encodeURIComponent(link)}`);
     const short = await res.text();
     return short;
 }
@@ -86,7 +87,7 @@ const getShortFromLink = async (link: string): Promise<string> => {
  * @param short The short ID to get the link for.
  */
 const getLinkFromShort = async (short: string): Promise<string> => {
-    const res = await fetch(`${backendUrl}/link/${short}`);
+    const res = await fetch(`${backendUrl}/link/${encodeURIComponent(short)}`);
     const link = await res.text();
     return link;
 }

@@ -32,6 +32,3 @@ Currently deployed via Fly.io. Steps to deploy to Fly.io:
 ## License
 
 [MIT](LICENSE)
-
-TODO:
-- [ ] Fix search for existing links path URL escaping
