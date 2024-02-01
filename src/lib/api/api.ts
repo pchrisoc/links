@@ -86,10 +86,11 @@ const getShortFromLink = async (link: string): Promise<string> => {
  * Gets the link from the links collection.
  * @param short The short ID to get the link for.
  */
-const getLinkFromShort = async (short: string): Promise<string> => {
+const getLinkFromShort = async (short: string): Promise<any> => {
     const res = await fetch(`${backendUrl}/link/${encodeURIComponent(short)}`);
     const link = await res.text();
-    return link;
+	const status = res.status;
+    return { link, status };
 }
 
 /** 

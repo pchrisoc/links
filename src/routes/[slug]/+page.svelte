@@ -17,8 +17,12 @@
 	onMount(async () => {
 		await sleep(250);
 		trigger = 1;
-		const link = await getLinkFromShort(data.short);
+		const {link, status} = await getLinkFromShort(data.short);
 		await sleep(1250);
+		if (status !== 200) {
+			window.location.href = 'https://ieee.studentorg.berkeley.edu/';
+			return;
+		}
 		window.location.href = link;
 	});
 </script>
